@@ -1,11 +1,14 @@
 fun main() {
+    
     val age = 8 * 365
     val name = "Isabel"
+    val border = "'-._,-'"
+    val timesToRepeat = 3
 
-    printBorder()
+    printBorder(border, timesToRepeat)
     println("Happy Birthday, ${name}")
-    printBorder()
-    
+    printBorder(border, timesToRepeat)
+
      // Let's print a cake!
     println("   ,,,,,   ")
     println("   |||||   ")
@@ -21,6 +24,10 @@ fun main() {
 
 }
 
- fun printBorder(){
-   println("=======================")
- }
+ fun printBorder(border: String, timesToRepeat: Int){
+    repeat(timesToRepeat) {
+        print(border)
+    }
+  println()
+}
+
